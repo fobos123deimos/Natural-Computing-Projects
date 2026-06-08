@@ -310,19 +310,6 @@ py yeast_protein_localization_mlp_training.py
 
 ## ⚠️ Import Note
 
-If the folder name is `Neural_Network`, make sure imports are consistent.
-
-Example:
-
-```python
-from Neural_Network.perceptron_implementation import M_Perceptron
-```
-
-If running scripts directly from inside the folder, a simpler import may be used:
-
-```python
-from perceptron_implementation import M_Perceptron
-```
 
 If using the refactored class names, the import may look like this:
 
