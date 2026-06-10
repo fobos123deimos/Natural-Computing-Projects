@@ -1,7 +1,7 @@
 from __future__ import print_function
 import os
 import neat
-import visualize
+import Evolutionary_Neural_Networks.neat_visualization as neat_visualization
 from numpy import median, std
 
 inputs = []
@@ -13,7 +13,7 @@ Y = []
 
 #TRATAMENTO DATA_SET
     
-file = open('ex2data1.txt','r')
+file = open('binary_admission_dataset.txt','r')
 for linha in file:
         if(linha!='\n'):
             Aux = linha[0:len(linha)-1].split(',')
@@ -87,9 +87,9 @@ def run(config_file):
         print("input {!r}, expected output {!r}, got {!r}".format(i, o, output))
     '''
     node_names = {-1:'A', -2: 'B', 0:'0 ou 1'}
-    visualize.draw_net(config, winner, True, node_names=node_names)
-    visualize.plot_stats(stats, ylog=False, view=True)
-    visualize.plot_species(stats, view=True)
+    neat_visualization.draw_net(config, winner, True, node_names=node_names)
+    neat_visualization.plot_stats(stats, ylog=False, view=True)
+    neat_visualization.plot_species(stats, view=True)
 
 
 
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # here so that the script will run successfully regardless of the
     # current working directory.
     local_dir = os.path.dirname(__file__)
-    config_path = os.path.join(local_dir, 'config-feedforward')
+    config_path = os.path.join(local_dir, 'neat_binary_classifier_config')
     run(config_path)
 
 #Depois Tentar entender tanto essa parte do __main__ quando o modulo visualize, 

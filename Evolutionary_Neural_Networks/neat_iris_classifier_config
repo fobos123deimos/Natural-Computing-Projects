@@ -1,0 +1,132 @@
+# ============================================================
+# NEAT Configuration
+# Iris Classifier - Feed-forward Neural Network
+# ============================================================
+
+
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 1.0
+pop_size              = 150
+reset_on_extinction   = False
+
+
+# ============================================================
+# Genome Configuration
+# ============================================================
+
+[DefaultGenome]
+
+# ------------------------------------------------------------
+# Network structure
+# ------------------------------------------------------------
+num_inputs            = 4
+num_hidden            = 0
+num_outputs           = 2
+
+feed_forward          = True
+initial_connection    = full
+
+
+# ------------------------------------------------------------
+# Node activation
+# ------------------------------------------------------------
+activation_default      = sigmoid
+activation_options      = sigmoid
+activation_mutate_rate  = 0.0
+
+
+# ------------------------------------------------------------
+# Node aggregation
+# ------------------------------------------------------------
+aggregation_default     = sum
+aggregation_options     = sum
+aggregation_mutate_rate = 0.0
+
+
+# ------------------------------------------------------------
+# Node bias
+# ------------------------------------------------------------
+bias_init_mean        = 0.0
+bias_init_stdev       = 1.0
+bias_min_value        = -30.0
+bias_max_value        = 30.0
+bias_mutate_power     = 0.5
+bias_mutate_rate      = 0.7
+bias_replace_rate     = 0.1
+
+
+# ------------------------------------------------------------
+# Node response
+# ------------------------------------------------------------
+response_init_mean      = 1.0
+response_init_stdev     = 0.0
+response_min_value      = -30.0
+response_max_value      = 30.0
+response_mutate_power   = 0.0
+response_mutate_rate    = 0.0
+response_replace_rate   = 0.0
+
+
+# ------------------------------------------------------------
+# Connection weights
+# ------------------------------------------------------------
+weight_init_mean      = 0.0
+weight_init_stdev     = 1.0
+weight_min_value      = -30.0
+weight_max_value      = 30.0
+weight_mutate_power   = 0.5
+weight_mutate_rate    = 0.8
+weight_replace_rate   = 0.1
+
+
+# ------------------------------------------------------------
+# Connection mutation
+# ------------------------------------------------------------
+conn_add_prob         = 0.7
+conn_delete_prob      = 0.2
+
+enabled_default       = True
+enabled_mutate_rate   = 0.005
+
+
+# ------------------------------------------------------------
+# Node mutation
+# ------------------------------------------------------------
+node_add_prob         = 0.7
+node_delete_prob      = 0.2
+
+
+# ------------------------------------------------------------
+# Genome compatibility
+# ------------------------------------------------------------
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 0.5
+
+
+# ============================================================
+# Species Configuration
+# ============================================================
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+
+# ============================================================
+# Stagnation Configuration
+# ============================================================
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 19
+species_elitism      = 2
+
+
+# ============================================================
+# Reproduction Configuration
+# ============================================================
+
+[DefaultReproduction]
+elitism              = 2
+survival_threshold   = 0.10
+

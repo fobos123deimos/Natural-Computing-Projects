@@ -1,8 +1,0 @@
-def adaptar(self):
-            Fator_Elite = int(self.getSize()*(1-self.El/100))
-            lista = list(self.getPop())
-            lista.sort()
-            lista = lista[0:Fator_Elite]
-            fdc = int((self.getPDC()/100)*len(lista))
-            for i in lista[0:fdc]:
-                lista[lista.index(i)] = choice(lista[fdc:len(lista)])
