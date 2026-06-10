@@ -1,5 +1,3 @@
-Segue um README em inglês para essa pasta, já alinhado com os nomes atuais dos scripts e datasets.
-
 # 🧬 Evolutionary Neural Networks
 
 A collection of small experiments combining **genetic algorithms**, **neuroevolution**, **NEAT**, and **feed-forward neural networks**.
