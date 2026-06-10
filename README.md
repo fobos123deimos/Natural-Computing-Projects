@@ -1,5 +1,3 @@
-Segue um `README.md` geral para a raiz do repositório `Natural-Computing-Projects`.
-
 # 🌿 Natural Computing Projects
 
 A collection of educational and experimental projects focused on **Natural Computing**, including neural networks, genetic algorithms, neuroevolution, NEAT, and biologically inspired computational models.
