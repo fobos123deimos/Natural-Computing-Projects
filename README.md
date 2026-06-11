@@ -41,31 +41,13 @@ This repository currently focuses mainly on:
 * Classic control environments
 * Educational implementations from scratch
 
----
+The diagram below gives a high-level visual intuition for neural computation: information flows through connected units, and each connection contributes to the final output.
 
-## 🖼️ Illustrative Images
-
-### Artificial Neural Network
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Artificial Neural Network Diagram" width="520">
-
-Image source: [Wikimedia Commons — Artificial neural network.svg](https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg)
-
----
-
-### Metaheuristics and Evolutionary Algorithms
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Metaheuristics_classification.svg" alt="Metaheuristics Classification Diagram" width="560">
-
-Image source: [Wikimedia Commons — Metaheuristics classification.svg](https://commons.wikimedia.org/wiki/File:Metaheuristics_classification.svg)
-
----
-
-### Fully Connected Neural Network
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Fully_connected_neural_network.svg" alt="Fully Connected Neural Network" width="520">
-
-Image source: [Wikimedia Commons — Fully connected neural network.svg](https://commons.wikimedia.org/wiki/File:Fully_connected_neural_network.svg)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Artificial Neural Network Diagram" width="520">
+  <br>
+  <sub>Image source: <a href="https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg">Wikimedia Commons — Artificial neural network.svg</a></sub>
+</p>
 
 ---
 
@@ -227,6 +209,14 @@ $$
 
 ### Feed-forward Neural Networks
 
+A feed-forward neural network connects layers in sequence: inputs are transformed by hidden layers until the final output layer produces a prediction. A fully connected architecture is a common starting point for studying multilayer perceptrons.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Fully_connected_neural_network.svg" alt="Fully Connected Neural Network" width="520">
+  <br>
+  <sub>Image source: <a href="https://commons.wikimedia.org/wiki/File:Fully_connected_neural_network.svg">Wikimedia Commons — Fully connected neural network.svg</a></sub>
+</p>
+
 For a multilayer neural network, each layer computes:
 
 $$
@@ -256,7 +246,13 @@ $$
 
 ### Genetic Algorithms
 
-A genetic algorithm evolves a population of candidate solutions.
+A genetic algorithm evolves a population of candidate solutions. In the broader family of metaheuristics, evolutionary algorithms are commonly grouped with nature-inspired optimization strategies.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Metaheuristics_classification.svg" alt="Metaheuristics Classification Diagram" width="560">
+  <br>
+  <sub>Image source: <a href="https://commons.wikimedia.org/wiki/File:Metaheuristics_classification.svg">Wikimedia Commons — Metaheuristics classification.svg</a></sub>
+</p>
 
 A candidate solution is usually represented as a chromosome:
 
