@@ -37,31 +37,6 @@ The main goal is to experiment with how evolutionary techniques can be used to:
 Evolutionary neural networks are useful because they allow neural models to be trained without relying exclusively on gradient descent. Instead of directly computing gradients, a population of candidate solutions is evaluated, selected, recombined, mutated, and improved over generations.
 
 ---
-
-## 🖼️ Illustrative Images
-
-### Evolutionary Algorithm Cycle
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Evolutionary_Algorithm.svg" alt="Evolutionary Algorithm Diagram" width="560">
-
-Image source: [Wikimedia Commons — Evolutionary Algorithm.svg](https://commons.wikimedia.org/wiki/File:Evolutionary_Algorithm.svg)
-
----
-
-### Genetic Algorithm Crossover
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Computational.science.Genetic.algorithm.Crossover.One.Point.svg" alt="One-point crossover in a genetic algorithm" width="560">
-
-Image source: [Wikimedia Commons — One Point Crossover.svg](https://commons.wikimedia.org/wiki/File:Computational.science.Genetic.algorithm.Crossover.One.Point.svg)
-
----
-
-### Artificial Neural Network
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Artificial Neural Network" width="520">
-
-Image source: [Wikimedia Commons — Artificial neural network.svg](https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg)
-
 ---
 
 ## 🧭 Conceptual Map
@@ -210,6 +185,12 @@ It can generate:
 
 ### 1. Genetic Algorithm
 
+A genetic algorithm works by repeatedly evaluating a population, selecting stronger candidates, recombining them, mutating them, and creating a new population for the next generation.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Evolutionary_Algorithm.svg" alt="Evolutionary Algorithm Diagram" width="560">
+
+Image source: [Wikimedia Commons — Evolutionary Algorithm.svg](https://commons.wikimedia.org/wiki/File:Evolutionary_Algorithm.svg)
+
 A genetic algorithm works with a population of candidate solutions:
 
 $$
@@ -249,9 +230,21 @@ flowchart LR
     F --> B
 ```
 
+Crossover is one of the central operators in this cycle. It combines parts of two candidate chromosomes to create new candidates that may inherit useful traits from both parents.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Computational.science.Genetic.algorithm.Crossover.One.Point.svg" alt="One-point crossover in a genetic algorithm" width="560">
+
+Image source: [Wikimedia Commons — One Point Crossover.svg](https://commons.wikimedia.org/wiki/File:Computational.science.Genetic.algorithm.Crossover.One.Point.svg)
+
 ---
 
 ### 2. Feed-forward Neural Network
+
+A feed-forward neural network organizes neurons in layers: input values move forward through hidden layers until the output layer produces a prediction. This is the neural component that the evolutionary experiments can optimize through weights, biases, or topology.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Artificial Neural Network" width="520">
+
+Image source: [Wikimedia Commons — Artificial neural network.svg](https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg)
 
 For a neural network layer $l$, the forward pass can be written as:
 
