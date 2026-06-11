@@ -34,31 +34,14 @@ This repository includes educational experiments related to:
 
 The main goal is not to build a production-ready machine learning library. The goal is to make the internal logic visible and easier to understand.
 
----
 
-## 🖼️ Illustrative Images
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Artificial Neural Network" width="560">
+</p>
 
-### Perceptron Model
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Perceptron.svg" alt="Perceptron Diagram" width="560">
-
-Image source: [Wikimedia Commons — Perceptron.svg](https://commons.wikimedia.org/wiki/File:Perceptron.svg)
-
----
-
-### Artificial Neural Network
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Artificial_neural_network.svg" alt="Artificial Neural Network" width="560">
-
-Image source: [Wikimedia Commons — Artificial neural network.svg](https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg)
-
----
-
-### Iris Dataset Scatterplot
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Iris_dataset_scatterplot.svg" alt="Iris Dataset Scatterplot" width="560">
-
-Image source: [Wikimedia Commons — Iris dataset scatterplot.svg](https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg)
+<p align="center">
+  <sub>Image source: <a href="https://commons.wikimedia.org/wiki/File:Artificial_neural_network.svg">Wikimedia Commons — Artificial neural network.svg</a></sub>
+</p>
 
 ---
 
@@ -155,7 +138,17 @@ The project intentionally avoids high-level abstractions in order to make each s
 
 ### 1. Artificial Neuron
 
-A basic artificial neuron computes a weighted sum of its inputs:
+A basic artificial neuron computes a weighted sum of its inputs. The perceptron diagram below gives a visual reference for this basic computational unit:
+
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Perceptron.svg" alt="Perceptron Diagram" width="560">
+</p>
+
+<p align="center">
+  <sub>Image source: <a href="https://commons.wikimedia.org/wiki/File:Perceptron.svg">Wikimedia Commons — Perceptron.svg</a></sub>
+</p>
+
 
 $$
 z = w^T x + b
@@ -284,6 +277,18 @@ sepal width
 petal length
 petal width
 ```
+
+These four measurements form a compact feature space where the Iris classes can be visualized and separated:
+
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Iris_dataset_scatterplot.svg" alt="Iris Dataset Scatterplot" width="560">
+</p>
+
+<p align="center">
+  <sub>Image source: <a href="https://commons.wikimedia.org/wiki/File:Iris_dataset_scatterplot.svg">Wikimedia Commons — Iris dataset scatterplot.svg</a></sub>
+</p>
+
 
 Target encoding:
 
